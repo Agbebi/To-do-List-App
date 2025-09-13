@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const date = require(__dirname + "/date.js");
 const _ = require("lodash");
 const port = process.env.PORT || 3000;
+const path = require("path");
 
 const items = [];
 
@@ -11,6 +12,7 @@ const app = express();
 
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 
