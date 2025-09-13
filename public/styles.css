@@ -1,0 +1,204 @@
+/* .smythe-regular {
+  font-family: "Smythe", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.averia-libre-light {
+  font-family: "Averia Libre", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.averia-libre-regular {
+  font-family: "Averia Libre", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.averia-libre-bold {
+  font-family: "Averia Libre", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.averia-libre-light-italic {
+  font-family: "Averia Libre", system-ui;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.averia-libre-regular-italic {
+  font-family: "Averia Libre", system-ui;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.averia-libre-bold-italic {
+  font-family: "Averia Libre", system-ui;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fredoka-<uniquifier> {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+font-family: "Averia Libre", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 14px;
+  /* background-image: url(images/markus-winkler-Q2J2qQsoYH8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(20%); */
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -2;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+
+.background_cover {
+  position: absolute;
+  content: "";
+  background-color: #000000ab;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+h1 {
+  font-family: "Averia Libre", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  padding: 10px;
+  margin: 40px auto;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  border-bottom: 1px solid white;
+}
+
+.items-container {
+  width: 80%;
+  max-width: 700px;
+  background-color: #5c2d27;
+  border-radius: 1rem;
+  box-shadow: 0.1px 0.1px 10px white;
+}
+
+.items {
+  width: 80%;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  color: black;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+span {
+  display: inline-block;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+}
+
+form.item {
+  margin: 20px auto;
+  width: fit-content;
+  display: flex;
+  gap: 20px;
+}
+
+input[type="text"] {
+font-family: "Averia Libre", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  height: 30px;
+  width: 250px;
+  border-radius: 1em;
+  border: none;
+  padding-left: 10px;
+}
+
+input:checked + span {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+input[type="text"]:focus {
+  outline: 0;
+}
+
+button {
+font-family: "Averia Libre", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  width: 60px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: black;
+  color: whitesmoke;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.616);
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+
+@media screen and (max-width: 720px) {
+    .items-container{
+      width: 80%;
+    }
+
+    input[type="text"]{
+      width: 80px;
+    }
+
+    video, .background_cover{
+      display: none;
+    }
+
+    body{    
+    background-image: url(images/markus-winkler-Q2J2qQsoYH8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(20%);
+    font-size: 15px;
+    }
+
+}
