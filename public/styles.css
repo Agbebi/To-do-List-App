@@ -186,7 +186,12 @@ button:hover {
     }
 
     input[type="text"]{
-      width: 80px;
+      width: 150px;
+    }
+
+    button{
+      width: 40px;
+      font-size: 14px;
     }
 
     video, .background_cover{
