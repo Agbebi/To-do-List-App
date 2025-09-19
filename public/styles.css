@@ -1,52 +1,17 @@
-/* .smythe-regular {
-  font-family: "Smythe", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-.averia-libre-light {
-  font-family: "Averia Libre", system-ui;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.averia-libre-regular {
-  font-family: "Averia Libre", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.averia-libre-bold {
-  font-family: "Averia Libre", system-ui;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.averia-libre-light-italic {
-  font-family: "Averia Libre", system-ui;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.averia-libre-regular-italic {
-  font-family: "Averia Libre", system-ui;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.averia-libre-bold-italic {
-  font-family: "Averia Libre", system-ui;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.fredoka-<uniquifier> {
-  font-family: "Fredoka", sans-serif;
+.work-sans {
+  font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} */
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 
 * {
   padding: 0;
@@ -60,14 +25,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-font-family: "Averia Libre", system-ui;
-  font-weight: 100;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-size: 14px;
-  /* background-image: url(images/markus-winkler-Q2J2qQsoYH8-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: brightness(20%); */
+  font-size: 12px;
 }
 
 video {
@@ -83,7 +44,7 @@ video {
 .background_cover {
   position: absolute;
   content: "";
-  background-color: #000000ab;
+  background-color: #00000054;
   top: 0;
   left: 0;
   width: 100vw;
@@ -92,7 +53,7 @@ video {
 }
 
 h1 {
-  font-family: "Averia Libre", system-ui;
+  font-family: "Work Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   padding: 10px;
@@ -139,10 +100,10 @@ form.item {
 }
 
 input[type="text"] {
-font-family: "Averia Libre", system-ui;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 13px;
+  font-size: 12px;
   height: 30px;
   width: 250px;
   border-radius: 1em;
@@ -160,10 +121,10 @@ input[type="text"]:focus {
 }
 
 button {
-font-family: "Averia Libre", system-ui;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 14px;
   width: 60px;
   border-radius: 10px;
   border: 1px solid black;
@@ -179,31 +140,28 @@ button:hover {
   text-decoration: line-through;
 }
 
-
 @media screen and (max-width: 720px) {
-    .items-container{
-      width: 80%;
-    }
+  .items-container {
+    width: 80%;
+  }
 
-    input[type="text"]{
-      width: 150px;
-    }
+  input[type="text"] {
+    width: 150px;
+  }
 
-    button{
-      width: 40px;
-      font-size: 14px;
-    }
+  button {
+    width: 40px;
+  }
 
-    video, .background_cover{
-      display: none;
-    }
+  video,
+  .background_cover {
+    display: none;
+  }
 
-    body{    
+  body {
     background-image: url(images/markus-winkler-Q2J2qQsoYH8-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: brightness(20%);
-    font-size: 15px;
-    }
-
+  }
 }
